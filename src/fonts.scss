@@ -1,0 +1,25 @@
+//fonts
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("./fonts/GTWalsheim.woff2") format("woff2"),
+    url("./fonts/GTWalsheim.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Souvenir";
+  src: url("./fonts/Souvenir-Light.woff2") format("woff2"),
+    url("./fonts/Souvenir-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+li {
+  a {
+    font-family: "Souvenir" !important;
+    font-size: 1.5rem;
+  }
+}
+* {
+  font-family: "GT Walsheim";
+}
