@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Order from "./Order";
 import Backend from "./Backend";
-import Logo from "./img/mc-logo.png";
+import Logo from "../img/mc-logo.png";
 
 class Nav extends Component {
   render() {

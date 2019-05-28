@@ -5,10 +5,13 @@ import Cart from "./Cart";
 class BottomButton extends Component {
   render() {
     return (
-      <div className={"bottomButton " + this.props.className}>
+      <div
+        onClick={() => this.increaseCartAmount()}
+        className={"bottomButton " + this.props.className}
+      >
         <Router>
           <React.Fragment>
-            <Link to="/Cart">Cart</Link>
+            <Link to="/Cart">Cart ( {this.props.amountOfItems} )</Link>
 
             <Switch>
               <Route exact path="/Cart" component={Cart} />
