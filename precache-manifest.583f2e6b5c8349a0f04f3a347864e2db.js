@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f923079a3eeae9dbb92fd1f9c6015770",
+    "revision": "546db79b655941e8c0d618cace4b2074",
     "url": "/middle-child/index.html"
   },
   {
-    "revision": "d280fa991ecdf469e23f",
-    "url": "/middle-child/static/css/main.11a6205d.chunk.css"
+    "revision": "a2b5bf4b2696770fba3e",
+    "url": "/middle-child/static/css/main.e81a8145.chunk.css"
   },
   {
-    "revision": "9ea1436bf7d6e94145cf",
-    "url": "/middle-child/static/js/2.3ecb5f03.chunk.js"
+    "revision": "9b1e9dfbfc01e417dba6",
+    "url": "/middle-child/static/js/2.147f54b3.chunk.js"
   },
   {
-    "revision": "d280fa991ecdf469e23f",
-    "url": "/middle-child/static/js/main.16838ad5.chunk.js"
+    "revision": "a2b5bf4b2696770fba3e",
+    "url": "/middle-child/static/js/main.26876189.chunk.js"
   },
   {
     "revision": "9400d4f74aa876838231",
@@ -36,11 +36,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/middle-child/static/media/Souvenir-Light.c7aeb17c.woff2"
   },
   {
-    "revision": "e139afb2a034bc54007a76904f15efff",
-    "url": "/middle-child/static/media/mc-logo.e139afb2.png"
+    "revision": "dd3411109b0829a84693f962aac7a715",
+    "url": "/middle-child/static/media/close.dd341110.svg"
   },
   {
-    "revision": "e16045b96425fc76fc2a04691e5a7b67",
-    "url": "/middle-child/static/media/sandwich.e16045b9.jpg"
+    "revision": "e139afb2a034bc54007a76904f15efff",
+    "url": "/middle-child/static/media/mc-logo.e139afb2.png"
   }
 ]);
