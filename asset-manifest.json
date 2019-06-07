@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/middle-child/static/css/main.e81a8145.chunk.css",
-    "main.js": "/middle-child/static/js/main.26876189.chunk.js",
-    "main.js.map": "/middle-child/static/js/main.26876189.chunk.js.map",
+    "main.js": "/middle-child/static/js/main.61ced24d.chunk.js",
+    "main.js.map": "/middle-child/static/js/main.61ced24d.chunk.js.map",
     "runtime~main.js": "/middle-child/static/js/runtime~main.c6addff9.js",
     "runtime~main.js.map": "/middle-child/static/js/runtime~main.c6addff9.js.map",
     "static/js/2.147f54b3.chunk.js": "/middle-child/static/js/2.147f54b3.chunk.js",
     "static/js/2.147f54b3.chunk.js.map": "/middle-child/static/js/2.147f54b3.chunk.js.map",
     "index.html": "/middle-child/index.html",
-    "precache-manifest.583f2e6b5c8349a0f04f3a347864e2db.js": "/middle-child/precache-manifest.583f2e6b5c8349a0f04f3a347864e2db.js",
+    "precache-manifest.e169a6b8dfb41b01c5d4dd6733973d14.js": "/middle-child/precache-manifest.e169a6b8dfb41b01c5d4dd6733973d14.js",
     "service-worker.js": "/middle-child/service-worker.js",
     "static/css/main.e81a8145.chunk.css.map": "/middle-child/static/css/main.e81a8145.chunk.css.map",
     "static/media/fonts.scss": "/middle-child/static/media/Souvenir-Light.c7aeb17c.woff2",
