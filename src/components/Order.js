@@ -1,7 +1,5 @@
 import React from "react";
 import MenuItem from "./MenuItem";
-import BottomButton from "./BottomButton";
-import ItemData from "../content.json";
 
 class Order extends React.Component {
   constructor(props) {
@@ -18,32 +16,18 @@ class Order extends React.Component {
     });
   }
   render() {
-    const buttonClass = "cartButton";
-    const itemClass = "menuClass";
-
     return (
       <div className="order-contain">
-        {/* <MenuItem handler={this.handler} className={itemClass} /> */}
-
-        {ItemData.map((itemDetail, index) => {
-          return (
-            <MenuItem
-              key={index}
-              handler={this.handler}
-              className={itemClass}
-              id={itemDetail.id}
-              title={itemDetail.name}
-              desc={itemDetail.desc}
-              price={itemDetail.price}
-              img={itemDetail.img}
-            />
-          );
-        })}
-
-        <BottomButton
-          amountOfItems={this.state.amountOfItems}
-          className={buttonClass}
-        />
+        {Object.keys(this.props.items).map(key => (
+          <MenuItem
+            handler={this.handler}
+            key={key}
+            index={key}
+            details={this.props.items[key]}
+            itemsInCart={this.props.itemsInCart[key]}
+            increaseItemAmount={this.props.increaseItemAmount}
+          />
+        ))}
       </div>
     );
   }
