@@ -37,28 +37,15 @@ class BackendEntry extends Component {
               value={this.props.details.price}
             />
           </label>
-          <label className="line" htmlFor="description">
+          <label className="line" htmlFor="desc">
             Description
             <textarea
-              type="text"
-              name="description"
+              name="desc"
               onChange={this.handleChange}
               value={this.props.details.desc}
             />
           </label>
           <div className="bottomInputs">
-            {/* <label className="radio">
-              Availability
-              <div>
-                <input type="radio" name="Availability" value="Available" />
-                <label htmlFor="Available">Available</label>
-              </div>
-              <div>
-                <input type="radio" name="Availability" value="Unavailable" />
-                <label htmlFor="Unavailable">Unavailable</label>
-              </div>
-            </label> */}
-
             <label htmlFor="status">Status</label>
             <select
               name="status"

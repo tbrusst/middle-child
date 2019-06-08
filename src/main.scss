@@ -76,10 +76,27 @@ nav {
     color: $green;
   }
   #quantity-ticker {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    p {
+      width: 30px;
+      text-align: center;
+    }
+    button {
+      width: 30px;
+      background: none;
+      border: none;
+      height: 100%;
+    }
+  }
+
+  &.unavailable {
+    opacity: 0.5;
+    filter: grayscale(100%);
+    pointer-events: none;
   }
 }
 
@@ -134,7 +151,7 @@ div.backendEntry {
   width: 100%;
 
   @media only screen and (min-width: 768px) {
-    width: 50%;
+    width: 45%;
   }
   @media only screen and (min-width: 1024px) {
     width: 30%;
@@ -155,6 +172,7 @@ div.backendEntry {
         padding: 10px;
         border: none;
         border-bottom: 1px solid $green;
+        line-height: initial;
       }
     }
 
@@ -180,6 +198,15 @@ div.backendEntry {
   button {
     margin-top: 10px;
     color: $red;
+    background: none;
+    border: none;
+  }
+
+  select {
+    margin-left: 10px;
+    width: 70px;
+    background: none;
+    border: none;
   }
 }
 
@@ -188,6 +215,14 @@ div.backendEntry {
   display: block;
 }
 #hide-cart {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
   display: none;
 }
 .cart-contain {

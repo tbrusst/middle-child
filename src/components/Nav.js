@@ -1,33 +1,49 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import base from "../js/base";
+import items from "../js/items.js";
 import Order from "./Order";
 import Backend from "./Backend";
 import Logo from "../img/mc-logo.png";
-import items from "../js/items.js";
 import BottomButton from "./BottomButton";
 import Cart from "./Cart";
+import { NavLink } from "react-router-dom";
 
 class Nav extends Component {
-  state = {
-    items: [],
-    itemsInCart: [],
-    cartShown: false
-  };
-
-  componentDidMount() {
-    this.setState({ items });
-  }
-
-  // loadSigns = () => {
-  //   this.setState({ items });
-  //   console.log(Object.keys(this.state));
+  // state = {
+  //   items: [],
+  //   itemsInCart: [],
+  //   cartShown: false
   // };
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+      itemsInCart: [],
+      cartShown: false,
+      total: 0
+    };
+    this.sumCartPrice = this.sumCartPrice.bind(this);
+  }
+
+  componentDidMount() {
+    // this.loadSigns();
+
+    this.ref = base.syncState("items", {
+      context: this,
+      state: "items"
+    });
+  }
+
+  loadSigns = () => {
+    this.setState({ items });
+  };
+
   updateItem = (key, updatedMenu) => {
-    console.log(this.state.items);
     // 1. copy the current state
     const items = { ...this.state.items };
-    console.log(items);
+
     // 2. update that state key/value
     items[key] = updatedMenu;
     // 3. set the new copy to the component state
@@ -53,6 +69,15 @@ class Nav extends Component {
       this.setState({ cartShown: true });
     }
   };
+
+  sumCartPrice(index, subtotal) {
+    //set state of total to the subtotal state of cart
+    var total = { ...this.state.total };
+    // console.log(itemsInCart);
+    total = this.state.total + subtotal;
+
+    this.setState({ total });
+  }
   render() {
     var cartClass = "hide-cart";
     if (this.state.cartShown) {
@@ -68,25 +93,19 @@ class Nav extends Component {
               <img src={Logo} alt="Middle Child Logo" />
               <ul>
                 <li>
-                  <Link to="/Backend">Backend</Link>
+                  <NavLink exact to="/Backend">
+                    Backend
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/Order">Order</Link>
+                  <NavLink exact to="/">
+                    Order
+                  </NavLink>
                 </li>
               </ul>
             </nav>
 
             <Switch>
-              <Route
-                path="/Order"
-                render={() => (
-                  <Order
-                    items={this.state.items}
-                    itemsInCart={this.state.itemsInCart}
-                    increaseItemAmount={this.increaseItemAmount}
-                  />
-                )}
-              />
               <Route
                 path="/Backend"
                 render={() => (
@@ -94,6 +113,18 @@ class Nav extends Component {
                     items={this.state.items}
                     updateItem={this.updateItem}
                     deleteItem={this.deleteItem}
+                  />
+                )}
+              />
+
+              <Route
+                path="/"
+                render={() => (
+                  <Order
+                    items={this.state.items}
+                    itemsInCart={this.state.itemsInCart}
+                    increaseItemAmount={this.increaseItemAmount}
+                    sumCartPrice={this.sumCartPrice}
                   />
                 )}
               />
@@ -107,7 +138,10 @@ class Nav extends Component {
           className={cartClass}
           displayCart={this.displayCart}
           itemsInCart={this.state.itemsInCart}
+          total={this.state.total}
         />
+
+        <button onClick={this.loadSigns} />
       </>
     );
   }

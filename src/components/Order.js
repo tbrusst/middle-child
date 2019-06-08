@@ -26,6 +26,7 @@ class Order extends React.Component {
             details={this.props.items[key]}
             itemsInCart={this.props.itemsInCart[key]}
             increaseItemAmount={this.props.increaseItemAmount}
+            sumCartPrice={this.props.sumCartPrice}
           />
         ))}
       </div>

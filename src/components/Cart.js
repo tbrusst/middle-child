@@ -4,8 +4,6 @@ import CartItem from "./CartItem";
 
 class Cart extends Component {
   render() {
-    const itemClass = "cartItem";
-
     return (
       <div className="cart-contain" id={this.props.className}>
         <div className="cart-header">
@@ -19,6 +17,8 @@ class Cart extends Component {
             itemsInCart={this.props.itemsInCart[key]}
           />
         ))}
+
+        <p>{this.props.total}</p>
       </div>
     );
   }
