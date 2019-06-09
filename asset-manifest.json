@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/middle-child/static/css/main.c19e7f01.chunk.css",
-    "main.js": "/middle-child/static/js/main.7073dda0.chunk.js",
-    "main.js.map": "/middle-child/static/js/main.7073dda0.chunk.js.map",
-    "runtime~main.js": "/middle-child/static/js/runtime~main.c6addff9.js",
-    "runtime~main.js.map": "/middle-child/static/js/runtime~main.c6addff9.js.map",
-    "static/js/2.daa40d44.chunk.js": "/middle-child/static/js/2.daa40d44.chunk.js",
-    "static/js/2.daa40d44.chunk.js.map": "/middle-child/static/js/2.daa40d44.chunk.js.map",
-    "index.html": "/middle-child/index.html",
-    "precache-manifest.17080f33f514ae76a82ef127ebd9b6fb.js": "/middle-child/precache-manifest.17080f33f514ae76a82ef127ebd9b6fb.js",
-    "service-worker.js": "/middle-child/service-worker.js",
-    "static/css/main.c19e7f01.chunk.css.map": "/middle-child/static/css/main.c19e7f01.chunk.css.map",
-    "static/media/fonts.scss": "/middle-child/static/media/Souvenir-Light.c7aeb17c.woff2",
-    "static/media/close.svg": "/middle-child/static/media/close.dd341110.svg",
-    "static/media/mc-logo.png": "/middle-child/static/media/mc-logo.e139afb2.png"
+    "main.css": "/idm364-bmr74/static/css/main.76458e42.chunk.css",
+    "main.js": "/idm364-bmr74/static/js/main.eed87e20.chunk.js",
+    "main.js.map": "/idm364-bmr74/static/js/main.eed87e20.chunk.js.map",
+    "runtime~main.js": "/idm364-bmr74/static/js/runtime~main.4e643602.js",
+    "runtime~main.js.map": "/idm364-bmr74/static/js/runtime~main.4e643602.js.map",
+    "static/js/2.6cbc7088.chunk.js": "/idm364-bmr74/static/js/2.6cbc7088.chunk.js",
+    "static/js/2.6cbc7088.chunk.js.map": "/idm364-bmr74/static/js/2.6cbc7088.chunk.js.map",
+    "index.html": "/idm364-bmr74/index.html",
+    "precache-manifest.613d88bac7cc524fb3ff086f47af5ae8.js": "/idm364-bmr74/precache-manifest.613d88bac7cc524fb3ff086f47af5ae8.js",
+    "service-worker.js": "/idm364-bmr74/service-worker.js",
+    "static/css/main.76458e42.chunk.css.map": "/idm364-bmr74/static/css/main.76458e42.chunk.css.map",
+    "static/media/fonts.scss": "/idm364-bmr74/static/media/Souvenir-Light.c7aeb17c.woff2",
+    "static/media/close.svg": "/idm364-bmr74/static/media/close.dd341110.svg",
+    "static/media/mc-logo.png": "/idm364-bmr74/static/media/mc-logo.e139afb2.png"
   }
 }
